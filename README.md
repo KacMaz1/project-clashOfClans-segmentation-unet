@@ -2,6 +2,7 @@
 full process in the U-net technical raport clash of clans.docx
 
 # Srodek Segmenter
+<img width="1448" height="728" alt="image" src="https://github.com/user-attachments/assets/770110a4-bfb4-4b49-b9ea-66f3073e6157" />
 
 Open-source model for segmenting the clash of clans base area named `srodek` on screenshots.
 
