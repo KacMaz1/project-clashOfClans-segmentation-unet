@@ -1,8 +1,13 @@
+# Training process
+full process in the word document
+
 # Srodek Segmenter
 
-Open-source model for segmenting the playable base area named `srodek` on screenshots.
+Open-source model for segmenting the clash of clans base area named `srodek` on screenshots.
 
 Test result: IoU `0.9832`, Dice `0.9915`.
+
+small dataset (only 10 test images)
 
 ## What This Includes
 
@@ -54,10 +59,11 @@ After thresholding, `srodek_segmenter.py` cleans the binary mask with the same p
 - filling the largest external contour.
 
 This step helps make the output mask more solid and removes small gaps or fragmented areas. If you use only the checkpoint manually, you will get the raw thresholded mask unless you also implement this postprocessing step.
+more details in word doc.
 
 ## Expected Input
 
-The model was trained on the standard base view shown after entering a battle. It should work best on screenshots taken from that same view.
+The model was trained on the FULL SCREEN standard base view shown after entering a battle. It should work best on screenshots taken from that same view.
 
 Small framing differences should usually be fine, because the training data included light zoom and position variation. Strong zoom-out, strong zoom-in, unusual camera framing, different game screens, or heavy UI changes may reduce the quality of the mask.
 
