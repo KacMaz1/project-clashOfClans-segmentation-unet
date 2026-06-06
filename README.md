@@ -1,5 +1,5 @@
 # Training process
-full process in the word document
+full process in the U-net technical raport clash of clans.docx
 
 # Srodek Segmenter
 
