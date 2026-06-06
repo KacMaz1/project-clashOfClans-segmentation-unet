@@ -33,6 +33,8 @@ The segmenter converts that probability map into:
 - `mask`: a binary image where `1` means `srodek` and `0` means background,
 - `overlay`: the input image with the predicted mask drawn on top.
 
+The segmenter always resizes the input image to the model resolution before prediction: 1024 x 576
+
 ## Using The Checkpoint Directly
 
 The checkpoint also stores the recommended threshold:
